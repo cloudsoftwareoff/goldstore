@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "618408695169",
+    "firebase_url": "https://goldstore-ffc0f-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "goldstore-ffc0f",
+    "storage_bucket": "goldstore-ffc0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618408695169:android:e4f93aa18d4e0d2c1a0480",
+        "android_client_info": {
+          "package_name": "com.cloudsoftware.goldstorex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618408695169-jln27v65tavm3pj936jirqmdkkopp60d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNyGCDKKLjeLXzTgtyBpaQDKnx-A2FFhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618408695169-jln27v65tavm3pj936jirqmdkkopp60d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

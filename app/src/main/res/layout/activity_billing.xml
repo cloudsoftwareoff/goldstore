@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProductActivity">
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:background="@drawable/gradient_backgroud">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@android:color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/go_back"
+                    android:src="@drawable/left_arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="4dp"/>
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Billing"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:src="@drawable/left_arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="4dp"
+                    android:alpha="0"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="#FFFFFF"
+
+                app:cardCornerRadius="8dp"
+
+                app:cardElevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="2dp"
+                        android:background="#FFFFFF"
+                        app:cardMaxElevation="4dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/linear1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/dollar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:padding="4dp"
+                                android:text="{$}"
+                                android:textColor="#4CAF50"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:singleLine="true"/>
+                            <ImageView
+                                android:id="@+id/image"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:focusable="false"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/dollar_bill"
+                                android:contentDescription="product image" />
+                            <TextView
+                                android:id="@+id/price_tn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:padding="0dp"
+                                android:text="{TND}"
+                                android:textColor="#04081E"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:singleLine="true"/>
+                        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:layout_weight="1">
+    <!-- Payment Instructions -->
+    <TextView
+        android:id="@+id/tvPaymentInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Please send the payment to this card with D17:"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:gravity="right|bottom"
+        android:orientation="horizontal"
+
+        android:padding="2dp">
+        <ImageView
+            android:id="@+id/d17"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:focusable="false"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dlogo"
+            android:contentDescription="product image" />
+        <TextView
+            android:id="@+id/PhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="16dp"
+            android:text="Phone : 12456789"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!--<TextView
+                        android:id="@+id/notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:padding="4dp"
+                        android:text="Dear valued customer, if three hours have passed since you made your payment and you have not yet received the purchased product, kindly reach out to us at goldstore.system@gmail.com. We are here to assist you promptly."
+                        android:textColor="#F44336"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        /-->
+
+
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginVertical="10dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/target_account"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/image_picker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <!-- Button to open image picker -->
+                                <ImageView
+                                    android:id="@+id/btnPickImage"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:padding="8dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/add_image"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Please select the screenshot showing the D17 Transaction number" />
+
+
+                            </LinearLayout>
+
+
+                            <!-- ImageView to display selected image -->
+                            <ImageView
+                                android:id="@+id/imageScreenshot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitCenter"
+                                android:layout_weight="1"
+                                android:adjustViewBounds="true"
+
+                                android:src="@drawable/d_screen"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtVerification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="We will send you an email after the verification process." />
+
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/send_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send" />
+
+
+                </LinearLayout></androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

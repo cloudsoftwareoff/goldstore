@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Gold Store</string>
+    <string name="email">Email addrress</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="create_account">Create account</string>
+    <string name="switch_to_login">Have an account? Login</string>
+    <string name="switch_to_signup">Don\'t have an account? Sign up</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="password_reset_sent">Password reset email sent</string>
+    <string name="ask_for_emain">Enter your Email</string>
+    <string name="creating_loading">Creating account…</string>
+    <string name="login_loading">Logging in…</string>
+
+
+
+
+</resources>
